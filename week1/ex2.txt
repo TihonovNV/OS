@@ -1,0 +1,41 @@
+    1  sudo echo 1
+    2  sudo apt update
+    3  sudo apt upgrade
+    4  sudo apt update
+    5  sudo apt upgrade
+    6  sudo apt autoremove
+    7  sudo apt upgrade
+    8  sudo apt update
+    9  sudo apt upgrade
+   10  sudo apt install python3
+   11  ./font-awesome.py 
+   12  python3 ./font-awesome.py 
+   13  go build main.go
+   14  sudo apt install golang-go
+   15  go build main.go
+   16  sudo apt install gccgo-go
+   17  apt-get update
+   18  sudo apt-get update
+   19  go build main.go
+   20  sudo apt install golang-go
+   21  go build main.go
+   22  whoami
+   23  ./
+   24  ../
+   25  //
+   26  -/
+   27  cd..
+   28  cd ..
+   29  cd..
+   30  cd ..
+   31  cd /usr/bin/
+   32  ls | sort -r | tail -n 3 
+   33  ls | sort | tail -n 3 
+   34  ls sort
+   35  ls | sort | head
+   36  ls gcc*
+   37  ls | gcc* | tail
+   38  ls *gcc*
+   39  ls *gcc* > /mnt/c/Users/Tihon/Desktop/ex1.c
+   40  ls *gcc* | sort -r > /mnt/c/Users/Tihon/Desktop/ex1.txt  
+   41  history > /mnt/d/Dev/OS/week1/ex2.txt
