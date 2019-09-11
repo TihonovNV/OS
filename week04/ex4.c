@@ -7,9 +7,9 @@
 
 int main(){
     char command[MAXLINE];
-    while(strcmp("exit", command)){
+    while(strcmp("exit\n", command) && strcmp("exit", command)){
         system(command);
-        scanf("%s", command);
+        fgets(command, MAXLINE, stdin);
     }
     return 0;
 }
