@@ -1,0 +1,2 @@
+
+2^16 bytes / (8*2^10 bytes per page) = 2^3 pages = 8 pages

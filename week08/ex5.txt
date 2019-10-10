@@ -1,0 +1,3 @@
+Physical address - address in physical memory, refers to the actual page.
+Virtual address - address in virtual address space,
+refers to physical address (usually) or to the disk, if page was moved.
