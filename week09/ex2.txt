@@ -1,0 +1,5 @@
+Increased ratio: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 and etc.
+One miss, every other are hits
+
+Decreased ratio: 1 2 3 4 5 6 7 8 9 10 11 12 13 and etc.
+No hits, only misses
