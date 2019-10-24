@@ -1,0 +1,20 @@
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ > _ex3.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ ls -l _ex3.txt
+-rw-r--r-- 1 nikita nikita 0 Oct 24 22:29 _ex3.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ chmod 666 _ex3.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ ls -l _ex3.txt
+-rw-rw-rw- 1 nikita nikita 0 Oct 24 22:29 _ex3.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ chmod 707 _ex3.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ ls -l _ex3.txt
+-rwx---rwx 1 nikita nikita 0 Oct 24 22:29 _ex3.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ chmod g=u _ex3.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ ls -l _ex3.txt
+-rwxrwxrwx 1 nikita nikita 0 Oct 24 22:29 _ex3.txt
+
+r=4
+w=2
+x=1
+
+660 means -rw-rw---- , user and group can write and read
+775 means -rwxrwxr-x , user and group can write, read and execute, and others can read and execute
+777 means -rwxrwxrwx , user, group ad others can write, read and execute

@@ -1,0 +1,9 @@
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ link /mnt/d/Dev/OS/week01/file.txt _ex2.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ ls -i _ex2.txt
+562949953422180 _ex2.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ find /mnt/d/Dev/OS/ -inum 562949953422180
+/mnt/d/Dev/OS/week01/file.txt
+/mnt/d/Dev/OS/week10/_ex2.txt
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ find /mnt/d/Dev/OS/ -inum 562949953422180 -exec rm {} \;
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ find /mnt/d/Dev/OS/ -inum 562949953422180
+nikita@DESKTOP-UNA4KC2:/mnt/d/Dev/OS/week10$ 
