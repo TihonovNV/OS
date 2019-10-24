@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <dirent.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX 1000
 
@@ -16,10 +17,11 @@ int main(){
     int i = 0;
 
     while((dp = readdir(dirp)) != NULL && i < MAX){
-        inodes[i] = dp->d_ino;
-        names[i] = dp->d_name;
-        printf("%s\n", dp->d_name);
-        ++i;
+        if(strcmp(dp->d_name, ".") && strcmp(dp->d_name, "..")){
+            inodes[i] = dp->d_ino;
+            names[i] = dp->d_name;
+            ++i;
+        }
     }
     for(i = 0; i < MAX; ++i){
         int counter = 1;

@@ -1,0 +1,1 @@
+Files with i-nodes with hard link count of two or more: file1.txt link1.txt
