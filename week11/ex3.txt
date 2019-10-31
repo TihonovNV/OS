@@ -1,0 +1,11 @@
+First output:
+Hello
+Hello
+Second output:
+Hello
+
+
+First case: Due to the fact that "data is written when a newline character is inserted
+into the stream or when the buffer is full" buffer will keep "Hello" string and output it twice 
+in parent's and children's processes.
+Second case: After fork buffer is empty, so program outputs once "Hello\n" and twice "\n".
