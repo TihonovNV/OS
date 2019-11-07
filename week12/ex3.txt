@@ -1,0 +1,23 @@
+1.12 GB text file
+
+gcc -DBUF_SIZE=2000 copy.c
+time ./a.out a.txt b.txt
+    real    0m6.853s
+    user    0m0.344s
+    sys     0m5.844s
+
+gcc -DBUF_SIZE=20000 copy.c
+time ./a.out a.txt b.txt
+    real    0m4.439s
+    user    0m0.047s
+    sys     0m1.547s
+
+gcc -DBUF_SIZE=2000000 copy.c
+time ./a.out a.txt b.txt
+    real    0m3.848s
+    user    0m0.000s
+    sys     0m1.203s
+
+Conclusion: larger buffer - faster transfer
+
+O_SYNC flag slightly increased time.
